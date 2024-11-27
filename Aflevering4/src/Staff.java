@@ -6,7 +6,7 @@ public class Staff {
         JavaProgrammer dean = new JavaProgrammer("Dean", "Java");
         JavaProgrammer eric = new JavaProgrammer("Eric", "C++");
 
-        System.out.println(adam.personMethod());
+        System.out.println(adam.personMetode());
         System.out.println(bill.chefRolle());
         System.out.println(carl.programmørRolle());
         System.out.println(dean.javaProgrammørRolle());
@@ -21,7 +21,7 @@ class Person {
         this.navn = navn;
     }
 
-    public String personMethod() {
+    public String personMetode() {
         return navn + " er en værdifuld medarbejder i dette projekt.";
     }
 
@@ -33,7 +33,7 @@ class Boss extends Person {
     }
 
     public String chefRolle() {
-        return personMethod() + " Han er chefen, som sørger for at delegere opgaver ud til alle medarbejderne, samt at holde øje med at projektet skyder frem og passer med tidsplanen. " + navn + " kan specielt godt lide at sniksnakke med hans yndlingsmedarbejdere så deres humør er i top.";
+        return personMetode() + " Han er chefen, som sørger for at delegere opgaver ud til alle medarbejderne, samt at holde øje med at projektet skyder frem og passer med tidsplanen. " + navn + " kan specielt godt lide at sniksnakke med hans yndlingsmedarbejdere så deres humør er i top.";
     }
 }
 
@@ -44,7 +44,7 @@ class Programmer extends Person {
     }
     
     public String programmørRolle() {
-        return personMethod () + " Han er en programmør som arbejder på projektet som chefen har givet holdet at arbejde med.";
+        return personMetode () + " Han er en programmør som arbejder på projektet som chefen har givet holdet at arbejde med.";
     }
 }
 
@@ -61,4 +61,3 @@ class JavaProgrammer extends Programmer {
     }
     
 }
-
