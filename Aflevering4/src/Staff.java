@@ -3,14 +3,14 @@ public class Staff {
         Person adam = new Person("Adam");
         Boss bill = new Boss("Bill");
         Programmer carl = new Programmer("Carl");
-        JavaProgrammer dean = new JavaProgrammer("Dean", "Java");
-        JavaProgrammer eric = new JavaProgrammer("Eric", "C++");
+        JavaProgrammer dean = new JavaProgrammer("Dean", "at programmere de små stykker koder indenfor algoritmerne som skal få udført arbejdet");
+        JavaProgrammer eric = new JavaProgrammer("Eric", "algoritmer, som sørger for at eliminere redundant kode");
 
-        System.out.println(adam.personMetode());
-        System.out.println(bill.chefRolle());
-        System.out.println(carl.programmørRolle());
-        System.out.println(dean.javaProgrammørRolle());
-        System.out.println(eric.javaProgrammørRolle());
+        System.out.println(adam.personMetode() + "\n");
+        System.out.println(bill.chefRolle() + "\n");
+        System.out.println(carl.programmørRolle() + "\n");
+        System.out.println(dean.javaProgrammørRolle() + "\n");
+        System.out.println(eric.javaProgrammørRolle() + "\n");
     }
 }
 
@@ -57,7 +57,7 @@ class JavaProgrammer extends Programmer {
     }
 
     public String javaProgrammørRolle() {
-        return programmørRolle() + " Han arbejder specifikt med " + code;
+        return programmørRolle() + " Han arbejder specifikt med " + code + ".";
     }
     
 }
